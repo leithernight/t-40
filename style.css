@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal';
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.se {
+    background-color: rgb(159, 205, 205);
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url(png/moon_flag.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 390px 150px;
+}
+
+.se .info {
+    display: flex;
+    align-items: end;
+    margin-bottom: 50px;
+    margin-left: 40px;
+}
+
+.inputs {
+    display: grid;
+    grid-gap: 5px;
+    font-size: 12pt;
+    width: 300px;
+    color: rgb(70, 108, 111);
+    text-transform: capitalize;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgb(114, 156, 158);
+    background-color: rgb(169, 210, 210);
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: rgb(114, 156, 158);
+}
+
+.input_secret {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 7.5px;
+}
+
+.input_small {
+    width: 75px;
+}
+
+.input_caps {
+    text-transform: uppercase;
+}
+
+.lbl {
+    display: flex;
+    position: absolute;
+    background-color: rgb(219, 100, 35);
+    height: 45px;
+    justify-content: start;
+    padding-left: 75px;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14pt;
+    width: 425px;
+    margin-top: 25px;
+    margin-left: -20px;
+}

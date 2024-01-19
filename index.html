@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+</head>
+<body>
+    <main>
+        <section class="se">
+            <div class="lbl">
+                Credit card details
+            </div>
+            <div class="info">
+                <div class="inputs">
+                    <div class="input_name">
+                    Card number
+                    </div>
+                    <input type="tel" maxlength="19" placeholder="1234 5678 9012 3456" id="card_num">
+
+                    <div class="input_name">
+                        Name on card
+                    </div>
+                    <input type="text" placeholder="Name Surname" id="card_name">
+
+                    <div class="input_secret">
+                        <div class="input_name">
+                            Expiry date
+                        </div>
+                        <div>&nbsp;</div>
+                        <div class="input_name input_caps">
+                            cvv/cvn
+                        </div>
+                        <input class="input_small" type="tel" placeholder="02" id="card_month"> 
+                        <input class="input_small" type="tel" placeholder="2017" id="card_year"> 
+                        <input class="input_small" type="password" pattern="[0-9\s]{13,19}" maxlength="3" placeholder="***"> 
+                    </div>
+                       
+                </div>
+            </div>
+        </section>
+        <button id="btn">Sell</button>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
